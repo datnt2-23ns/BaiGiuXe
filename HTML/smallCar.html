@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/smallCar.css" />
+    <title>Quản lý Xe máy</title>
+  </head>
+  <body>
+    <div class="duongVien"></div>
+    <nav class="lienKet">
+      <a href="../index.html" class="logo-carpark"
+        ><img src="../img/CarPark.png" alt="Logo"
+      /></a>
+
+      <div class="menu-container">
+        <a href="../index.html">TRANG CHỦ</a>
+
+        <div class="dropdown">
+          <a href="./home.html">QUẢN LÝ BÃI GIỮ XE</a>
+          <div class="dropdown-content">
+            <a href="./motobike.html">Xe máy</a>
+            <a href="./smallCar.html">Xe con</a>
+          </div>
+        </div>
+        <a href="./cardManagement.html">QUẢN LÝ THẺ XE</a>
+        <a href="./login.html">ĐĂNG NHẬP</a>
+      </div>
+    </nav>
+    <div id="container">
+      <div id="input-container">
+        <h2 style="text-align: center">Khu vực Xe con</h2>
+        <form id="parking-form">
+          <label for="license-plate">Biển số:</label><br />
+          <input type="text" id="license-plate" name="license-plate" /><br />
+          <label for="card-number">Mã thẻ:</label><br />
+          <input type="text" id="card-number" name="card-number" /><br />
+          <label for="vehicle-type">Loại xe:</label><br />
+          <input
+            type="text"
+            id="vehicle-type"
+            name="vehicle-type"
+            placeholder="Xe vượt/Xe tháng"
+          /><br />
+          <label for="entry-time">Thời gian vào:</label><br />
+          <input
+            type="text"
+            id="entry-time"
+            name="entry-time"
+            placeholder="hh:mm - dd/mm/yyyy"
+          /><br /><br />
+          <input type="submit" value="Lưu" />
+        </form>
+      </div>
+      <div id="image-container">
+        <img id="parking-image" src="../img/BaiGiuXe.png" alt="" width="50%" />
+        <div id="button-container">
+          <div class="button-row">
+            <button onclick="changeImage('khuA')">Khu A</button>
+            <button onclick="changeImage('khuB')">Khu B</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function changeImage(zone) {
+        var image = document.getElementById("parking-image");
+        if (zone === "khuA") {
+          image.src = "../img/SmallCar-A.drawio.png";
+        } else if (zone === "khuB") {
+          image.src = "../img/SmallCar-B.drawio.png";
+        }
+      }
+    </script>
+  </body>
+</html>

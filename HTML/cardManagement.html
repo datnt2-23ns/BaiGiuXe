@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/cardManagement.css" />
+    <title>Quản thẻ xe</title>
+  </head>
+  <body>
+    <div class="duongVien"></div>
+    <nav class="lienKet">
+      <a href="../index.html" class="logo-carpark"
+        ><img src="../img/CarPark.png" alt="Logo"
+      /></a>
+
+      <div class="menu-container">
+        <a href="../index.html">TRANG CHỦ</a>
+
+        <div class="dropdown">
+          <a href="./home.html">QUẢN LÝ BÃI GIỮ XE</a>
+          <div class="dropdown-content">
+            <a href="./motorbike.html">Xe máy</a>
+            <a href="./smallCar.html">Xe con</a>
+          </div>
+        </div>
+
+        <a href="./cardManagement.html">QUẢN LÝ THẺ XE</a>
+        <a href="./login.html">ĐĂNG NHẬP</a>
+      </div>
+    </nav>
+    <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Tên Chủ Xe</th>
+          <th>Biển Số</th>
+          <th>Mã Thẻ</th>
+          <th>Loại Xe</th>
+          <th>Ngày Gian Hạn</th>
+          <th>Ngày Hết Hạn</th>
+          <th>Tổng Tiền</th>
+          <th>Ghi chú</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="actionButtons">
+      <button id="btnThem">Thêm</button>
+      <button id="btnSua">Sửa</button>
+      <button id="btnXoa">Xóa</button>
+      <button id="btnTimKiem">Tìm kiếm</button>
+      <button class="saveButton">Lưu</button>
+    </div>
+    <script src="../JS/carManagement.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.duongVien {
+  background-color: rgb(144, 202, 249);
+  height: 5px;
+}
+
+.lienKet {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.lienKet .logo {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+  margin-right: auto;
+  display: block;
+  line-height: normal;
+}
+
+.lienKet .logo:hover {
+  background-color: #bbb;
+}
+
+.menu-container a,
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.menu-container a:hover,
+.dropdown a:hover {
+  background-color: #bbb;
+}
+
+.menu-container a:active {
+  color: rgb(144, 202, 249);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-content a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #bbb;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 85%;
+  height: auto;
+}
+
+.logo-carpark img {
+  max-width: 100px;
+  height: auto;
+}
+
+.logo-carpark {
+  margin-right: auto;
+}
+
+.menu-container {
+  margin-left: auto;
+}

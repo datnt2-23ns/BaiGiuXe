@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.duongVien {
+  background-color: rgb(144, 202, 249);
+  height: 5px;
+}
+.lienKet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  /* padding: 10px; */
+}
+.lienKet a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+.lienKet a:hover {
+  background-color: #bbb;
+}
+.lienKet.logo {
+  margin-right: auto;
+}
+#data-display {
+  padding: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.actionButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.actionButtons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+.actionButtons button:hover {
+  background-color: #bbb;
+}
+.actionButtons.saveButton {
+  margin-left: auto;
+}
+table tbody td:not(:first-child) {
+  min-width: 100px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+  text-align-last: center;
+}
+select option {
+  padding: 8px;
+  text-align: center;
+}
+select option:hover {
+  background-color: #bbb;
+}
+select option:checked {
+  background-color: #144f93;
+  color: #fff;
+}
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.menu-container a,
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+  line-height: normal;
+  vertical-align: middle;
+}
+.menu-container a:hover,
+.dropdown a:hover {
+  background-color: #bbb;
+}
+
+.menu-container a:active {
+  color: rgb(144, 202, 249);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-button {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.dropdown .dropdown-button:hover {
+  background-color: #bbb;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #bbb;
+}
+
+.logo-carpark img {
+  max-width: 100px;
+  height: auto;
+}
+
+.logo-carpark {
+  margin-right: auto;
+}
+
+.menu-container {
+  margin-left: auto;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../CSS/login.css" />
+  </head>
+  <body>
+    <div class="duongVien"></div>
+    <nav class="lienKet">
+      <a href="../index.html" class="logo-carpark"
+        ><img src="../img/CarPark.png" alt="Logo"
+      /></a>
+
+      <div class="menu-container">
+        <a href="../index.html">TRANG CHỦ</a>
+
+        <div class="dropdown">
+          <a href="./home.html">QUẢN LÝ BÃI GIỮ XE</a>
+          <div class="dropdown-content">
+            <a href="./motorbike.html">Xe máy</a>
+            <a href="./smallCar.html">Xe con</a>
+          </div>
+        </div>
+
+        <a href="./cardManagement.html">QUẢN LÝ THẺ XE</a>
+        <a href="./login.html">ĐĂNG NHẬP</a>
+      </div>
+    </nav>
+    <div class="container">
+      <h2>Đăng nhập</h2>
+      <label for="text">Tài khoản</label>
+      <input type="text" placeholder="Tài khoản" />
+      <label for="password">Mật khẩu</label>
+      <input type="password" placeholder="Mật khẩu" />
+      <div class="btn">Đăng nhập</div>
+      <div class="divider">
+        <hr />
+        <span>Hoặc</span>
+        <hr />
+      </div>
+      <div class="create-account" onclick="redirectToCreateAccount()">
+        Tạo tài khoản mới
+      </div>
+      <p class="forgot-password">Quên mật khẩu?</p>
+    </div>
+
+    <script>
+      function redirectToCreateAccount() {
+        window.location.href = "./register.html";
+      }
+    </script>
+  </body>
+</html>

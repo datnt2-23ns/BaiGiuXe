@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <title>Quản lý bãi giữ xe</title>
+  </head>
+  <body>
+    <div class="duongVien"></div>
+    <nav class="lienKet">
+      <a href="../index.html" class="logo-carpark"
+        ><img src="../img/CarPark.png" alt="Logo"
+      /></a>
+      <div class="menu-container">
+        <a href="../index.html">TRANG CHỦ</a>
+        <div class="dropdown">
+          <a href="./home.html" class="dropdown-button">QUẢN LÝ BÃI GIỮ XE</a>
+          <div class="dropdown-content">
+            <a href="./motorbike.html">Xe máy</a>
+            <a href="./smallCar.html">Xe con</a>
+          </div>
+        </div>
+        <a href="./cardManagement.html">QUẢN LÝ THẺ XE</a>
+        <a href="./login.html">ĐĂNG NHẬP</a>
+      </div>
+    </nav>
+    <div id="data-display">
+      <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Biển số</th>
+            <th>Mã thẻ</th>
+            <th>Loại xe (vượt/tháng)</th>
+            <th>Thời gian vào</th>
+            <th>Thời gian ra</th>
+            <th>Tổng tiền</th>
+            <th>Ghi chú</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="actionButtons">
+      <!-- <button id="btnThem">Thêm</button> -->
+      <button id="btnSua">Sửa</button>
+      <button id="btnXoa">Xóa</button>
+      <button id="btnTimKiem">Tìm kiếm</button>
+      <button class="saveButton">Lưu</button>
+    </div>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
